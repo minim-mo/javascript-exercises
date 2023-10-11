@@ -265,31 +265,29 @@ console.log(multiply(1,2));
 
 // Write a function called capitalize that takes a string and returns that string with only the first letter capitalized. 
 // Make sure that it can take strings that are lowercase, UPPERCASE or BoTh.
-function capitalize(string) {
-    let splitString = str.toUpperCase().split("");
-    for (let i=0; i < splitString.length; i++) {
-        if (splitString.length[i] < splitString.length) {
-            splitString[i].charAt(0).toLowerCase();
-        }
-        str = splitString.join(" ");
 
-    }
-    return str;
+//Pseudocode goes here!
+// 1. need function capitalize(text) <<< string = text
+// 2. finding the first letter in that text. so let text = "Hello!"
+//charAt() method will return the specified index(position) in this case we need the first letter so It'd be index[0].
+// to return the first letter >>> let letter = text.charAt(0)
+
+function capitalize(text) {
+    let letter = text.charAt(0);
+    return letter;
 }
-
+console.log(capitalize("Hello"));
 
 // Write a function called lastLetter that takes a string and returns the very last letter of that string:
 // lastLetter("abcd") should return "d"
-function lastLetter(string) {
-    let splitString = str.toLowerCase().split("");
 
-    for (let i = 0; i < splitString.length; i++) {
-        if (splitString.length[i] < splitString.length) {
-            splitString[i].charAt(0).toLowerCase();
-        }
-        str = splitString.join(" ");
-    }
-    return str;
+//Pseudocode goes here!
+// 1. write function lastLetter(string);
+// 2. to find the very last letter of string
+
+function lastLetter(string) {
+    let result = string.charAt(string.length-1);
+    return result;
 }
 console.log(lastLetter("abcd"));
 //correct answer will print "d"
