@@ -312,3 +312,114 @@ console.log(lastLetter("abcd"));
 
 //parseInt function
 //should return user's input.
+
+/* Fundamental Part 4 
+- Using Arrays
+- Using built-in array method
+- using loops
+-getting TDD exercise.
+
+*/
+
+/* Arrays = special variable, which could hold more than one value:
+const cars = ["Jeep", "Toyota", "Cooper"]
+
+arrays is storing the variables in the list of list items.
+accessing the array with index
+
+looping array elements
+using for loop
+
+*/
+
+//for loop
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("print-here").innerHTML = fruits;
+
+function addFruits() {
+    fruits.push("Watermelon");
+    
+    document.getElementById("print-here").innerHTML = fruits;
+}
+addFruits();
+console.log(fruits);
+
+
+
+// let fruitsL = fruits.length;
+// let text = "<ul>";
+// for ( let i = 0; i < fruitsL; i++) {
+//     text += "<li>" + fruits[i] + "</li>";
+
+// }
+// text += "</ul>";
+
+
+// document.getElementById("print-here").innerHTML = text;
+
+// console.log(text);
+
+//
+
+//Logical Operators
+// || OR
+// && AND
+
+
+/*
+Check the login
+importance: 3
+Write the code which asks for a login with prompt.
+
+If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled”, 
+if it’s another string – then show “I don’t know you”.
+
+The password is checked as follows:
+
+If it equals “TheMaster”, then show “Welcome!”,
+Another string – show “Wrong password”,
+For an empty string or cancelled input, show “Canceled”
+
+*/
+
+//Pseudocode
+// first check if is "Admin"
+// secondly check if the password is correct
+//So...
+// if (user === "Admin") {
+//    prompt{"Enter your password"} }
+// if (password === "TheMaster") { alert{"Welcome!"} } 
+// }
+// if (user === !"Admin") {prompt{"I don't know you!"}};
+// , if (user === "" || user === "other") { alert("Canceled!") }
+// else if (password === !"TheMaster") { prompt{"Wrong password"}}
+// else (password === "cancel") { alert("Canceled!") }
+
+
+function Login() {
+    // let text = ""; //set default string
+    let userName = prompt("Enter you user name"); 
+
+    if (userName === "Admin") {
+        let enterPassword = prompt("Enter your password");
+        if (enterPassword === "TheMaster") {
+            alert("Welcome!");
+        }
+        else if (enterPassword !== "Admin" && null) {
+            alert("Canceled");
+        }
+        else {
+            alert("Wrong password!!");
+        }
+    } if (userName !== "Admin" || null) {
+      alert ("try again!");
+    } else {
+      alert("I don't know you!");
+    }
+}
+
+Login();
+
+
+////calculate function
+
